@@ -1,0 +1,2 @@
+spring.mvc.pathmatch.matching-strategy: ant-path-matcher
+spring.data.mongodb.uri: mongodb://root:root@localhost:27017/springboot-mongo
