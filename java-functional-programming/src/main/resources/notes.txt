@@ -1,0 +1,38 @@
+java.util.function.Predicate<T>
+--------------------------------
+Clase utilizada para crear lambda que devuelve un cuyo lógica dentro de la función devuelve un booleano (true o false)
+
+BiPredicate es similar a Predicate pero acepta dos parámetros
+
+java.util.function.BiPredicate<T, U>
+---------------------------------------
+Similar a Predicate, pero en lugar acepta 2 parámetros
+
+java.util.function.Function<T, R>
+-----------------------------------
+Clase que sirve para crear una función que acepta un parámatero (T) y devuelve un resultado (R).
+Ej: Function<String, List<String>> splitByComma = v -> List.of(v.split(","))
+
+java.util.function.BiFunction<T>
+--------------------------------
+Similar a Function, pero acepta dos parámetros de entrada (T, U) y devuelve un resultado (R)
+Ej:  BiFunction<String, String, List<String>> splitBy = (cadena, regex) -> List.of(cadena.split(regex));
+
+java.util.function.Consumer<T>
+---------------------------
+Acepta 1 parámetro (T) y no devuelve nada. Se utiliza llamando a accept(T value)
+
+java.util.function.BiConsumer<T, U>
+-----------------------------
+Similar a Consumer, pero acepta 2 parámetros en lugar de 1
+
+java.util.function.Supplier<T>
+----------------------------------
+No acepta parámetros, pero devuelve un valor indicado en el genérico (T)
+
+Otros comentarios
+----------------------
+ - La programación funcional debe ser Objetos y no primitivos.
+    Ejemplos: Boolean en lugar de boolean, Integer en lugar de int
+ - Los objetivos primitivos no permiten que se les asigne null;
+
